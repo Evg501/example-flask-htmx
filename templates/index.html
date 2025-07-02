@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTMX + Flask</title>
+    <script src="https://unpkg.com/htmx.org @1.9.5"></script>
+</head>
+<body>
+    <h1>Пример HTMX + Flask</h1>
+
+    <button hx-get="/load-content" hx-target="#content" hx-swap="innerHTML">
+        Загрузить контент
+    </button>
+
+    <div id="content">
+        Здесь появится контент после нажатия на кнопку.
+    </div>
+</body>
+</html>
